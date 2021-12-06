@@ -3,8 +3,9 @@ package com.ing.zoo.animals;
 import java.util.Random;
 
 public class Pig extends Animal{
-    public Pig(String name, String helloText, String eatText, String trick) {
-        super(name, helloText, eatText, trick);
+
+    public Pig(String name, String helloText, String eatText, String trick, boolean isHerbivore, boolean isCarnivore) {
+        super(name, helloText, eatText, trick, isHerbivore, isCarnivore);
     }
 
     public void sayHello()
