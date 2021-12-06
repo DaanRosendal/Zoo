@@ -7,16 +7,6 @@ public class Tiger extends Animal {
         super(name, helloText, eatText, isHerbivore, isCarnivore);
     }
 
-    public void sayHello()
-    {
-        System.out.println(helloText);
-    }
-
-    public void eatMeat()
-    {
-        System.out.println(eatText);
-    }
-
     public void performTrick()
     {
         Random random = new Random();

@@ -8,21 +8,6 @@ public class Pig extends Animal{
         super(name, helloText, eatText, trick, isHerbivore, isCarnivore);
     }
 
-    public void sayHello()
-    {
-        System.out.println(helloText);
-    }
-
-    public void eatLeaves()
-    {
-        System.out.println(eatText);
-    }
-
-    public void eatMeat()
-    {
-        System.out.println(eatText);
-    }
-
     public void performTrick()
     {
         Random random = new Random();

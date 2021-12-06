@@ -1,6 +1,6 @@
 package com.ing.zoo.animals;
 
-public abstract class Animal{
+public class Animal{
     protected String name;
     protected String helloText;
     protected String eatText;
@@ -23,5 +23,17 @@ public abstract class Animal{
         this.trick = trick;
         this.isHerbivore = isHerbivore;
         this.isCarnivore = isCarnivore;
+    }
+
+    public void sayHello(){
+        System.out.println(this.name + ": " + this.helloText);
+    }
+
+    public void eatLeaves(){
+        if(isHerbivore) System.out.println(this.name + ": " + this.eatText);
+    }
+
+    public void eatMeat(){
+        if(isCarnivore) System.out.println(this.name + ": " + this.eatText);
     }
 }
