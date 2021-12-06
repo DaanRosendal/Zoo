@@ -1,10 +1,11 @@
 package com.ing.zoo.animals;
 
+import com.ing.zoo.animals.types.Carnivore;
 import java.util.Random;
 
-public class Tiger extends Animal {
-    public Tiger(String name, String helloText, String eatText, boolean isHerbivore, boolean isCarnivore) {
-        super(name, helloText, eatText, isHerbivore, isCarnivore);
+public class Tiger extends Carnivore {
+    public Tiger(String name, String helloText, String eatText) {
+        super(name, helloText, eatText);
     }
 
     public void performTrick()
@@ -19,6 +20,6 @@ public class Tiger extends Animal {
         {
             trick = "scratches ears";
         }
-        System.out.println(trick);
+        System.out.println(name + ": " + trick);
     }
 }

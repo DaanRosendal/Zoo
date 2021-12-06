@@ -1,8 +1,9 @@
 package com.ing.zoo.animals;
 
-public class Hippo extends Animal {
+import com.ing.zoo.animals.types.Herbivore;
 
-    public Hippo(String name, String helloText, String eatText, boolean isHerbivore, boolean isCarnivore) {
-        super(name, helloText, eatText, isHerbivore, isCarnivore);
+public class Hippo extends Herbivore {
+    public Hippo(String name, String helloText, String eatText) {
+        super(name, helloText, eatText);
     }
 }
